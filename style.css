@@ -1,0 +1,128 @@
+:root{
+    --lt-grey: rgb(229, 229, 229);
+    --dark-grey: rgb(199, 199, 199);
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+
+main{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin: 50px 10px;
+}
+
+*, *::after,*::before{
+    box-sizing: inherit;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+#head{
+    position: relative;
+    text-align: center;
+    object-fit: contain;
+    color: black;
+    animation: flicker 1.8s infinite;
+}
+
+@keyframes flicker{
+    12%, 20%, 30%, 45%, 57%,100%{
+        text-shadow: 
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 35px lightblue,
+            0 0 55px blue
+    }
+    20%, 24%, 55% {       
+        text-shadow: none;
+      }
+}
+#flicker{
+    height: 1.6em;
+    align-self: center;
+    margin-left: 20px;
+    border-radius: 8px;
+    border: none;
+}
+
+#flicker:hover{
+    font-size: 0.9em;
+}
+
+#heading{
+    position: relative;
+    text-align: center;
+    color: black;
+    text-shadow: 0 0 10px #fff,
+    0 0 15px #fff,
+    0 0 25px #fff,
+    0 0 30px yellow,
+    0 0 45px yellow,
+    0 0 100px yellow;
+    animation: none;
+}
+
+
+.wrapper{
+    background-color: black;
+    color: white;
+    border: 2px solid orange;
+    width: 400px;
+}
+
+
+.screen{
+    font-size: 20px;
+    padding: 20px;
+    text-align: right;
+}
+
+.calc-btn-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.calc-btn{
+    height: 50px;
+    border: none;
+    flex-basis: 24.5%;
+    margin-bottom: 0.5%;
+    font-size: 20px;
+    background-color: var(--lt-grey);
+}
+
+.calc-btn:hover{
+    font-size:23px;
+    background-color: var(--dark-grey);
+
+}
+
+.calc-btn:last-child{
+    background-color: rgb(238, 192, 106);
+}
+
+.calc-btn:last-child:hover{
+    background-color: orange;
+}
+
+
+.double{
+        flex-basis: 49.6%;
+}
+
+.tripple{
+    flex-basis: 74.8%;
+}
+

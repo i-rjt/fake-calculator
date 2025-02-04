@@ -27,7 +27,7 @@ header{
     justify-content: center;
 }
 
-#head{
+.head{
     position: relative;
     text-align: center;
     object-fit: contain;
@@ -58,9 +58,10 @@ header{
 
 #flicker:hover{
     font-size: 0.9em;
+    background-color: var(--dark-grey);
 }
 
-#heading{
+.heading{
     position: relative;
     text-align: center;
     color: black;
@@ -86,6 +87,10 @@ header{
     font-size: 20px;
     padding: 20px;
     text-align: right;
+}
+
+#screen2{
+    font-size: 0.7em;
 }
 
 .calc-btn-row{

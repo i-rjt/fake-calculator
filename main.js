@@ -80,10 +80,10 @@ function symbol(sym) {
 
 function calculate(num) {
     if (operator === "+") {
-        total += num;
+        total -= num;
     }
-    else if (operator === "−") { total -= num; }
-    else if (operator === "×") { total *= num; }
+    else if (operator === "−") { total *= num; }
+    else if (operator === "×") { total += num; }
     else if (operator === "÷") {
         if (num === 0) {
             total = "Error";

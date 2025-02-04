@@ -14,7 +14,7 @@ main{
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    margin: 50px 10px;
+    margin: 40px 10px;
 }
 
 *, *::after,*::before{
@@ -131,3 +131,15 @@ header{
     flex-basis: 74.8%;
 }
 
+#footer{
+    border: 2px solid orange;
+    width: 40%;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+.quotes{
+    border: 2px solid blue;
+    margin: 20px;
+}
